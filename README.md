@@ -1,4 +1,4 @@
-# gosaliya_sahil_music_mixer
+# MUSIC MIXER
 A Music Mixer Project 
 
 # description
