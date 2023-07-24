@@ -1,19 +1,16 @@
-# MUSIC MIXER
-A Music Mixer Project 
+# gosaliya_sahilkumar_svg_icons
 
-# description
-This is a simple one page web application to explore and manipulate the tunes with basic html, css and js functionality by implementing drag and drop.
+This file is a collection of svg icons
 
 # how to use
-1. Clone the repo / Download the files
-2. Load it in your system
-3. Run it and have fun
-
-# functionality
-Use your mouse to drag the pieces of music icons into the dragging space and see how it plays. You can pick one or multiple at a time.
+copy it
+fork it
+run it
 
 # contributing
-Sahilkumar Gosaliya - Student at Fanshawe
+
+Sahilkumar Gosaliya
 
 # license
+
 MIT
