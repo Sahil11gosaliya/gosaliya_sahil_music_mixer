@@ -9,7 +9,7 @@ const volumeSlider = document.getElementById('volume-slider');
 let activeAudios = [];
 let usedClips = []; // Array to keep track of used audio clips
 
-// Functions and Methods
+
 // Function to start playing audio
 function startAudio(audio, zone) {
     // Check if the maximum number of active audios (4) has been reached
