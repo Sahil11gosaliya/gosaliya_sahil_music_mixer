@@ -1,3 +1,5 @@
+console.log("JS is working!");
+
 // Variables
 const audioElements = document.querySelectorAll('.audio');
 const boxes = document.querySelectorAll('.box');
@@ -8,7 +10,6 @@ const resetButton = document.getElementById('reset-button');
 const volumeSlider = document.getElementById('volume-slider');
 let activeAudios = [];
 let usedClips = []; // Array to keep track of used audio clips
-
 
 // Function to start playing audio
 function startAudio(audio, zone) {
@@ -42,12 +43,11 @@ function startAudio(audio, zone) {
     let svg = zone.querySelector('.drop-zone-svg');
     if (svg) {
         svg.style.display = 'block';
-        svg.contentDocument.querySelector('svg').classList.add('animate');
+        svg.classList.add('animate');
     }
 
     // Add the "used" class to the box to make it black and white
-    let box = document.getElementById(audio.id);
-    box.classList.add('used');
+    audio.parentElement.classList.add('used');
 }
 
 // Function to reset the mixer
@@ -73,11 +73,10 @@ function resetMixer() {
         let svg = zone.querySelector('.drop-zone-svg');
         if (svg) {
             svg.style.display = 'none';
-            svg.contentDocument.querySelector('svg').classList.remove('animate');
+            svg.classList.remove('animate');
         }
     });
 }
-
 
 // Setup drag and drop for all boxes
 boxes.forEach((box) => {
@@ -96,7 +95,7 @@ boxes.forEach((box) => {
 
 // Setup drag and drop for all zones
 dropZones.forEach((zone) => {
-    zone.addEventListener('dragover', (e) => { e.preventDefault();});
+    zone.addEventListener('dragover', (e) => { e.preventDefault(); });
 
     zone.addEventListener('drop', (e) => {
         e.preventDefault();
